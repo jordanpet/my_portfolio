@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmanuel Peter | Backend Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon -->
+     <!-- Favicon -->
+<link rel="icon" href="src/img/favicon.ico" type="image/x-icon">
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-jQK+2dr3p6OKOIzxvRUI+nGC8XDjV6UKZToU9ED0glTD2WmAGZmGr+uqHyDWQ0loU2sIhOjoFRC4sG3aMr2L1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Font & Styles -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
+    <style>
+        .dual-color {
+            color: black;
+            text-shadow: 1px 1px 0 blue;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="fixed inset-x-0 top-0 flex justify-between items-center px-4 sm:px-8 py-4 bg-white shadow-md z-50 border-b border-blue-600">
+        <!-- EP + Name -->
+        <div class="flex items-center space-x-2 overflow-hidden whitespace-nowrap">
+            <span class="text-base sm:text-xl md:text-2xl font-bold dual-color border border-blue-800 rounded px-2 py-1 font-['Pixelify_Sans']">EP</span>
+            <h1 class="text-base sm:text-xl md:text-2xl font-semibold font-['Pixelify_Sans'] flex space-x-0.5">
+                <span class="dual-color">E</span>
+                <span class="dual-color">m</span>
+                <span class="dual-color">m</span>
+                <span class="dual-color">a</span>
+                <span class="dual-color">n</span>
+                <span class="dual-color">u</span>
+                <span class="dual-color">e</span>
+                <span class="dual-color">l</span>
+                <span class="w-1"></span>
+                <span class="dual-color">P</span>
+                <span class="dual-color">e</span>
+                <span class="dual-color">t</span>
+                <span class="dual-color">e</span>
+                <span class="dual-color">r</span>
+            </h1>
+        </div>
+    
+        <!-- Download Resume -->
+        <div class="ml-2">
+            <a href="/src/portfolio/emmanuel_Peter_Resume.pdf" download class="text-xs sm:text-base md:text-lg font-medium dual-color hover:underline whitespace-nowrap">
+                Download Resume
+            </a>
+        </div>
+    </header>
+    
+    
+    <!-- Main -->
+    <main class="pt-24 pb-16 px-4 sm:px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-xl mt-4">
+        <!-- Hero Section -->
+        <section class="text-center mb-12">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:gap-8">
+                <img src="/src/img/WhatsApp Image.jpeg" alt="Emmanuel Peter"
+                    class="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-full border-2 border-blue-800 mx-auto sm:mx-0 mb-4 sm:mb-0" />
+                <div class="text-center sm:text-left">
+                    <h2 class="text-2xl sm:text-3xl dual-color font-semibold">Backend Web & App Developer</h2>
+                    <p class="mt-2  text-blue-800 text-sm sm:text-base">Specialized in building scalable RESTful APIs
+                        and microservices</p>
+                    <div class="mt-6 flex flex-wrap justify-center sm:justify-start gap-4">
+                        <button onclick="document.getElementById('skills').scrollIntoView()"
+                            class="px-4 py-2 border border-blue-800 rounded-lg dual-color hover:bg-blue-800 hover:text-white transition">Skills</button>
+                        <button onclick="document.getElementById('projects').scrollIntoView()"
+                            class="px-4 py-2 border border-blue-800 rounded-lg dual-color hover:bg-blue-800 hover:text-white transition">Projects</button>
+                        <button onclick="document.getElementById('contact').scrollIntoView()"
+                            class="px-4 py-2 border border-blue-800 rounded-lg dual-color hover:bg-blue-800 hover:text-white transition">Contact
+                            Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="scroll-mt-24 mb-12">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-center dual-color :text-left">
+                Technical Skills
+            </h3>
+            <ul class="space-y-4 text-blue-900 text-sm sm:text-base">
+
+                <!-- Node.js & Express.js -->
+                <li class="flex items-center space-x-2">
+                    <span>Node.js & Express.js</span>
+                    <div class="flex space-x-1">
+                        <img src="src/img/nodedotjs.svg" alt="Node.js" class="w-5 h-5"
+                            style="filter: invert(42%) sepia(77%) saturate(504%) hue-rotate(88deg) brightness(91%) contrast(87%);" />
+                        <img src="src/img/expressdotcom.svg" alt="Express.js" class="w-5 h-5"
+                            style="filter: invert(89%) sepia(46%) saturate(835%) hue-rotate(1deg) brightness(91%) contrast(94%);" />
+                    </div>
+                </li>
+
+                <!-- NestJS -->
+                <li class="flex items-center space-x-2">
+                    <span>NestJS Architecture</span>
+                    <img src="src/img/nestjs.svg" alt="NestJS" class="w-5 h-5"
+                        style="filter: invert(16%) sepia(94%) saturate(6679%) hue-rotate(351deg) brightness(93%) contrast(115%);" />
+                </li>
+
+                <!-- RESTful API -->
+                <li class="flex items-center space-x-2">
+                    <span>RESTful API Design</span>
+                    <img src="src/img/1000_F_480911520_v1VMx4VBEQqEP215aPyB5L59H6VEmag5-767930979.jpg" alt="REST API"
+                        class="w-5 h-5" />
+                </li>
+
+                <!-- Databases -->
+                <li class="flex items-center space-x-2">
+                    <span>Databases: PostgreSQL, MongoDB, MySQL</span>
+                    <div class="flex space-x-1">
+                        <img src="src/img/postgresql.svg" alt="PostgreSQL" class="w-5 h-5"
+                            style="filter: invert(26%) sepia(36%) saturate(5392%) hue-rotate(176deg) brightness(95%) contrast(92%);" />
+                        <img src="src/img/mongodb.svg" alt="MongoDB" class="w-5 h-5"
+                            style="filter: invert(32%) sepia(97%) saturate(749%) hue-rotate(83deg) brightness(91%) contrast(90%);" />
+                        <img src="src/img/mysql.svg" alt="MySQL" class="w-5 h-5"
+                            style="filter: invert(43%) sepia(72%) saturate(1020%) hue-rotate(173deg) brightness(97%) contrast(87%);" />
+                    </div>
+                </li>
+
+                <!-- Authentication -->
+                <li class="flex items-center space-x-2">
+                    <span>Authentication & Authorization (JWT, OAuth)</span>
+                    <img src="src/img/shield-solid.svg" alt="Auth" class="w-5 h-5"
+                        style="filter: invert(15%) sepia(95%) saturate(7430%) hue-rotate(356deg) brightness(91%) contrast(120%);" />
+                </li>
+
+                <!-- Testing -->
+                <li class="flex items-center space-x-2">
+                    <span>Testing: Jest, Supertest</span>
+                    <img src="src/img/jest.svg" alt="Jest" class="w-5 h-5"
+                        style="filter: invert(23%) sepia(84%) saturate(1796%) hue-rotate(336deg) brightness(90%) contrast(95%);" />
+                </li>
+
+                <!-- CI/CD & Docker -->
+                <li class="flex items-center space-x-2">
+                    <span>CI/CD & Docker</span>
+                    <div class="flex space-x-1">
+                        <img src="src/img/docker.svg" alt="Docker" class="w-5 h-5"
+                            style="filter: invert(35%) sepia(91%) saturate(519%) hue-rotate(169deg) brightness(91%) contrast(90%);" />
+                        <i class="fa-solid fa-gear text-blue-500 text-sm"></i>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="scroll-mt-24 mb-12">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-center dual-color sm:text-left">Selected Projects
+            </h3>
+            <div class="space-y-6 text-sm sm:text-base">
+                <div>
+                    <h4 class="font-medium text-blue-800">Food Marketplace API</h4>
+                    <p class="text-gray-600">Production-ready NestJS backend powering a food delivery marketplace with
+                        zones, areas, offers, and payment APIs.</p>
+                </div>
+                <div>
+                    <h4 class="font-medium text-blue-800">E-Commerce Cart Service</h4>
+                    <p class="text-gray-600">Robust cart management endpoints including add, update, remove, and list
+                        with payment integrations.</p>
+                </div>
+                <div>
+                    <h4 class="font-medium text-blue-800">Authentication Module</h4>
+                    <p class="text-gray-600">Secure login and session management using Express, JWT, and EJS-based
+                        templating.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-24 text-center py-2">
+            <h3 class="text-xl dual-color sm:text-2xl font-semibold mb-4">Contact Me</h3>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <a href="https://github.com/jordanpet" target="_blank" class="text-blue-600 hover:text-blue-800">
+                    <i class="fab fa-github"></i></a>
+                <a href="https://wa.me/2349048304921" target="_blank" class="text-green-600 hover:text-green-800">
+                    <i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/jordanpeter0" target="_blank" class="text-pink-600 hover:text-pink-800">
+                    <i class="fab fa-instagram"></i></a>
+                <a href="mailto:rudishbrown@gmail.com" class="text-gray-600 hover:text-gray-800">
+                    <i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 dual-color  text-sm text-gray-500">
+        &copy; 2025 Emmanuel Peter
+    </footer>
+</body>
+
+</html>
