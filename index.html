@@ -56,23 +56,22 @@
 <body class="text-gray-800 font-sans">
   <!-- Header -->
   <header
-    class="fixed inset-x-0 top-4 flex justify-between items-center px-6 py-3 bg-transparent backdrop-blur-sm z-50 rounded-xl max-w-6xl mx-auto left-0 right-0 border border-transparent shadow-lg">
+    class="fixed inset-x-0 top-4 px-4 sm:px-6 py-3 bg-white/70 backdrop-blur-sm z-50 rounded-xl max-w-6xl mx-auto border border-transparent shadow-lg flex flex-col md:flex-row md:justify-between md:items-center gap-3">
+
     <!-- EP + Name -->
-    <div class="flex items-center space-x-3 overflow-hidden whitespace-nowrap">
+    <div class="flex items-center justify-center md:justify-start space-x-3 overflow-hidden whitespace-nowrap">
       <span
-        class="text-lg sm:text-2xl md:text-3xl font-bold dual-color border border-blue-800 rounded px-3 py-1 font-['Pixelify_Sans'] bg-white">EP</span>
-      <h1 class="text-base sm:text-xl md:text-2xl font-semibold font-['Pixelify_Sans'] flex space-x-0.5">
-        <span class="dual-color">E</span><span class="dual-color">m</span><span class="dual-color">m</span><span
-          class="dual-color">a</span><span class="dual-color">n</span><span class="dual-color">u</span><span
-          class="dual-color">e</span><span class="dual-color">l</span>
-        <span class="w-1"></span>
-        <span class="dual-color">P</span><span class="dual-color">e</span><span class="dual-color">t</span><span
-          class="dual-color">e</span><span class="dual-color">r</span>
+        class="text-lg sm:text-2xl md:text-3xl font-bold dual-color border border-blue-800 rounded px-3 py-1 font-['Pixelify_Sans'] bg-white">
+        EP
+      </span>
+      <h1 class="text-base sm:text-xl md:text-2xl font-semibold font-['Pixelify_Sans'] flex flex-wrap">
+        <span class="dual-color">Emmanuel</span>
+        <span class="ml-1 dual-color">Peter</span>
       </h1>
     </div>
 
     <!-- Download Resume -->
-    <div>
+    <div class="flex justify-center md:justify-end">
       <a href="/src/portfolio/Emmanuel_Godwin.pdf" download
         class="text-xs sm:text-base md:text-lg font-medium px-4 py-2 border border-blue-800 rounded-lg dual-color hover:bg-blue-800 hover:text-white transition-colors duration-300">
         Download Resume
@@ -81,7 +80,7 @@
   </header>
 
   <!-- Main -->
-  <main class="pt-24 pb-16 px-4 sm:px-6 max-w-4xl mx-auto bg-white shadow-xl rounded-xl mt-4">
+  <main class="pt-28 pb-16 px-4 sm:px-6 max-w-4xl mx-auto bg-white shadow-xl rounded-xl mt-4">
     <!-- Hero Section -->
     <section class="text-center mb-12">
       <div class="flex flex-col sm:flex-row sm:items-center sm:gap-8">
@@ -206,7 +205,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="py-4 dual-color text-sm text-gray-500">
+  <footer class="py-4 dual-color text-sm text-gray-500 text-center">
     &copy; 2025 Emmanuel Peter
   </footer>
 </body>
